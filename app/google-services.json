@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "13294726219",
+    "firebase_url": "https://iwork-1fd09-default-rtdb.firebaseio.com",
+    "project_id": "iwork-1fd09",
+    "storage_bucket": "iwork-1fd09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13294726219:android:1a1485c0e478b986c6b1ce",
+        "android_client_info": {
+          "package_name": "com.example.iwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13294726219-o934a0lr5140p9iso25fdmcm1sumu76g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iwork",
+            "certificate_hash": "be1fa4793447def12b629c9a4cb036597a004f23"
+          }
+        },
+        {
+          "client_id": "13294726219-ddc8agsh4o7p79fk41k2orbnm8jio5bp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSCJ3osvxxawKSEA2UzJ8rzKxiKO-y_aU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13294726219-ddc8agsh4o7p79fk41k2orbnm8jio5bp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

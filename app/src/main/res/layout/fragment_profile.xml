@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:id="@+id/profile_layout">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_to_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:src="@drawable/ic_action_add_profile" />
+
+
+        <ImageView
+            android:id="@+id/student_icon_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/student_icon" />
+
+        <TextView
+            android:id="@+id/personal_infos_profile"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_icon_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/rounded_bg"
+            android:fontFamily="@font/montserrat"
+            android:padding="10dp"
+            android:text="Personal Informations"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tech_skills_profile"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/personal_infos_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_bg"
+            android:fontFamily="@font/montserrat"
+            android:padding="10dp"
+            android:text="Tech Skills"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    <TextView
+        android:id="@+id/soft_skills_profile"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tech_skills_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_bg"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:text="Soft Skills"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/wotk_exp_profile"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/soft_skills_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_bg"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:text="Work Experience"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/degrees_profile"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wotk_exp_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_bg"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:text="Degrees"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ff7171"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/name_in_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="ANADI Jabran"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat" />
+
+    <TextView
+        android:id="@+id/email_in_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="j.anadi@hotmail.com"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

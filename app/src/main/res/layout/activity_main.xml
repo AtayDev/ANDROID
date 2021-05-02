@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/spaces_bg">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Welcome!"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/who"
+        android:layout_below="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Choose your profile"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/student_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_bg"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        >
+        <ImageView
+            android:id="@+id/student_icon"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:background="@drawable/student_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginLeft="28dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/employer_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_bg"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        >
+        <ImageView
+            android:id="@+id/employer_icon"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:background="@drawable/employer_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employer"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginLeft="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
