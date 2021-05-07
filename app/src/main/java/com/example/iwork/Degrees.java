@@ -12,36 +12,32 @@ import com.google.firebase.auth.FirebaseUser;
 
 import Implementation.student_impl;
 
-public class Tech_Skills extends AppCompatActivity {
+public class Degrees extends AppCompatActivity {
 
     Button submit;
-
-    EditText mobile_level;
-    EditText web_level;
-
-    String mobile_level_string;
-    String web_level_string;
+    EditText uni_enroll, degree_level;
+    String uni_enroll_string, degree_level_string;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tech__skills);
+        setContentView(R.layout.activity_degrees);
 
-        //Getting the id of the View Elements
-        mobile_level=findViewById(R.id.mobile_level);
-        web_level=findViewById(R.id.web_level);
-
+        uni_enroll=findViewById(R.id.university_enroll);
+        degree_level=findViewById(R.id.degree_level);
         submit=findViewById(R.id.submit_skill);
-        //Setting the Click Listener
+
+        //Setting the onClick listener
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mobile_level_string=mobile_level.getText().toString();
-                web_level_string=web_level.getText().toString();
+                uni_enroll_string=uni_enroll.getText().toString();
+                degree_level_string=degree_level.getText().toString();
                 FirebaseUser user_student = FirebaseAuth.getInstance().getCurrentUser();
                 student_impl studentDAO=new student_impl();
-                studentDAO.addMobile(user_student.getEmail(),mobile_level_string);
-                studentDAO.addWeb(user_student.getEmail(),web_level_string);
+
+                studentDAO.addUniEnroll(user_student.getEmail(),uni_enroll_string);
+                studentDAO.addDegLevel(user_student.getEmail(),degree_level_string);
 
             }
         });

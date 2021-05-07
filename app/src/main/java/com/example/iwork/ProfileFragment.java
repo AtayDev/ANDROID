@@ -21,7 +21,9 @@ public class ProfileFragment extends Fragment {
 
     FloatingActionButton add_to_profile;
     TextView tech_skills;
-
+    TextView work_exp;
+    TextView soft_skills;
+    TextView degrees_profile;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -34,7 +36,12 @@ public class ProfileFragment extends Fragment {
 
         //Get the Add Button
         add_to_profile=getView().findViewById(R.id.add_to_profile);
+
+        //Get the fields of the profile
         tech_skills=getView().findViewById(R.id.tech_skills_profile);
+        work_exp=getView().findViewById(R.id.work_exp_profile);
+        soft_skills=getView().findViewById(R.id.soft_skills_profile);
+        degrees_profile=getView().findViewById(R.id.degrees_profile);
 
         //Setting Up A Listener to user action
         add_to_profile.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +55,32 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(),Tech_Skills.class);
+                startActivity(intent);
+            }
+        });
+        //Work Exp Listener
+        work_exp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(),Work_Exp.class);
+                startActivity(intent);
+            }
+        });
+
+        //Soft Skills Listener
+        soft_skills.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(),Soft_Skills.class);
+                startActivity(intent);
+            }
+        });
+
+        //Degrees Listener
+        degrees_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(),Degrees.class);
                 startActivity(intent);
             }
         });

@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IWork">
-        <activity android:name=".Tech_Skills"></activity>
+        <activity android:name=".Degrees"></activity>
+        <activity android:name=".Soft_Skills" />
+        <activity android:name=".Work_Exp" />
+        <activity android:name=".Tech_Skills" />
         <activity android:name=".Home_test" />
         <activity android:name=".Home_Student" />
         <!--

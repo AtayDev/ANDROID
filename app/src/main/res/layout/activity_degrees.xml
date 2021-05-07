@@ -11,7 +11,7 @@
         android:id="@+id/header_skills"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tech Skills Section"
+        android:text="Degrees Section"
         android:fontFamily="@font/montserrat"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
@@ -21,47 +21,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/header_details"
-        android:layout_below="@id/header_skills"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Levels: Basic-Moderate-Advanced"
-        android:fontFamily="@font/montserrat"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
-        android:id="@+id/mobile_level"
-        android:layout_below="@id/header_details"
+        android:id="@+id/university_enroll"
+        android:layout_below="@id/header_skills"
         android:layout_marginTop="40dp"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/age"
         android:layout_marginBottom="30dp"
         android:background="#11000000"
         android:ems="10"
         android:fontFamily="@font/montserrat"
         android:layout_centerHorizontal="true"
-        android:hint="Mobile Skills"
+        android:hint="Are you enrolled in a university?"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="16dp" />
     <EditText
-        android:id="@+id/web_level"
-        android:layout_below="@id/mobile_level"
+        android:id="@+id/degree_level"
+        android:layout_below="@id/university_enroll"
         android:layout_width="250dp"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="30dp"
         android:background="#11000000"
         android:ems="10"
         android:fontFamily="@font/montserrat"
         android:layout_centerHorizontal="true"
-        android:hint="Web Skills"
+        android:hint="Highest level of formal education that you've completed?"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="16dp" />
@@ -71,12 +57,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/web_level"
+        android:layout_below="@id/degree_level"
         android:text="submit"
         android:textColor="@color/white"
         android:backgroundTint="#ff7171"/>
-
-    
-
-
 </RelativeLayout>

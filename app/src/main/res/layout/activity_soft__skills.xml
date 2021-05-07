@@ -11,7 +11,7 @@
         android:id="@+id/header_skills"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tech Skills Section"
+        android:text="Soft Skills Section"
         android:fontFamily="@font/montserrat"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
@@ -36,24 +36,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <EditText
-        android:id="@+id/mobile_level"
+        android:id="@+id/english_level"
         android:layout_below="@id/header_details"
         android:layout_marginTop="40dp"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_above="@+id/age"
         android:layout_marginBottom="30dp"
         android:background="#11000000"
         android:ems="10"
         android:fontFamily="@font/montserrat"
         android:layout_centerHorizontal="true"
-        android:hint="Mobile Skills"
+        android:hint="English level"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="16dp" />
     <EditText
-        android:id="@+id/web_level"
-        android:layout_below="@id/mobile_level"
+        android:id="@+id/another_lang"
+        android:layout_below="@id/english_level"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginBottom="30dp"
@@ -61,22 +60,50 @@
         android:ems="10"
         android:fontFamily="@font/montserrat"
         android:layout_centerHorizontal="true"
-        android:hint="Web Skills"
+        android:hint="Do you know other languages?"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="16dp" />
 
+    <EditText
+        android:id="@+id/comm_level"
+        android:layout_below="@id/another_lang"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:layout_centerHorizontal="true"
+        android:hint="How well you communicate?"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16dp" />
+    <EditText
+        android:id="@+id/overtime_work"
+        android:layout_below="@id/comm_level"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="#11000000"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:layout_centerHorizontal="true"
+        android:hint="Can work extra hours?"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16dp" />
     <Button
         android:id="@+id/submit_skill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/web_level"
+        android:layout_below="@id/overtime_work"
         android:text="submit"
         android:textColor="@color/white"
         android:backgroundTint="#ff7171"/>
 
-    
+
 
 
 </RelativeLayout>

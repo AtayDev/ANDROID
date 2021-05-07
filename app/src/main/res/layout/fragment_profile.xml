@@ -70,7 +70,7 @@
         android:textColor="@color/white"
         android:textSize="20sp" />
     <TextView
-        android:id="@+id/wotk_exp_profile"
+        android:id="@+id/work_exp_profile"
         android:layout_width="304dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/soft_skills_profile"
@@ -86,7 +86,7 @@
         android:id="@+id/degrees_profile"
         android:layout_width="304dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/wotk_exp_profile"
+        android:layout_below="@id/work_exp_profile"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/rounded_bg"
