@@ -11,7 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IWork">
-        <activity android:name=".Degrees"></activity>
+        <activity android:name=".Home_Employer">
+
+        </activity>
+        <activity android:name=".Sign_Up_Emp"/>
+        <activity android:name=".Sign_In_Emp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Degrees" />
         <activity android:name=".Soft_Skills" />
         <activity android:name=".Work_Exp" />
         <activity android:name=".Tech_Skills" />
@@ -27,22 +38,13 @@
         </activity>
         -->
         <activity android:name=".Sign_Up" />
-        <activity android:name=".Sign_In">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Sign_In" />
         <activity android:name=".MainActivity">
-
-            <!--
-            <intent-filter>
+           <!-- <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
+            </intent-filter>-->
         </activity>
 
         <meta-data
