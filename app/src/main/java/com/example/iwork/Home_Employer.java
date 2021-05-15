@@ -9,10 +9,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.DragEvent;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -56,14 +54,19 @@ public class Home_Employer extends AppCompatActivity implements BottomNavigation
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.nav_home:
+                finish();
+                break;
+
             case R.id.nav_jobApp:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new jobAppFragment()).commit();
+                        new jobOffersFragment()).addToBackStack(null).commit();
                 break;
 
             case R.id.nav_profile:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new ProfileFragment()).commit();
+                        new ProfileFragmentEmployer()).addToBackStack(null).commit();
+
                 break;
             case R.id.nav_signOut:
                 FirebaseAuth.getInstance().signOut();
@@ -81,7 +84,8 @@ public class Home_Employer extends AppCompatActivity implements BottomNavigation
         } else {
             super.onBackPressed();
         }
-    }
+}
+
 
 
 }
